@@ -1,0 +1,15 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-networks__item {
+  background-color: white;
+  margin: 0 10px;
+}
+
+.social-networks__item img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,7 @@
+<div class="social-networks">
+  <div *ngFor="let item of networks" class="social-networks__item {{item.name}}">
+    <a href="{{item.url}}" target="_blank">
+      <img src="assets/social-networks/{{item.icon}}" alt="{{item.name}}">
+    </a>
+  </div>
+</div>

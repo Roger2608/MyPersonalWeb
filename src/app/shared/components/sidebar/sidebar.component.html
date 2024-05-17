@@ -1,0 +1,12 @@
+<div class="screen" [ngClass]="{'sidebar': isSidebar}">
+  <h1>{{isSidebar ? 'RICM' : 'Roger Israel Cabrera Muñoz'}}</h1>
+  <shared-sb-menu></shared-sb-menu>
+  <div class="button-container">
+    <button [ngClass]="{'btn-toggle': isSidebar,
+            'btn-toggle-close': !isSidebar}"
+            (click)="toggleSidebar()">
+      {{ isSidebar ? '|||' : '<'}}
+    </button>
+  </div>
+  <shared-social-networks></shared-social-networks>
+</div>
