@@ -1,5 +1,7 @@
 <div class="screen" [ngClass]="{'sidebar': isSidebar}">
-  <h1>{{isSidebar ? 'RICM' : 'Roger Israel Cabrera Muñoz'}}</h1>
+  <div class="name-container">
+    <h1>{{isSidebar ? 'RICM' : 'Roger Israel Cabrera Muñoz'}}</h1>
+  </div>
   <shared-sb-menu></shared-sb-menu>
   <div class="button-container">
     <button [ngClass]="{'btn-toggle': isSidebar,

@@ -20,12 +20,18 @@
   top: 0;
 }
 
+.name-container {
+  display: grid;
+  place-items: center;
+}
+
 h1 {
   white-space: nowrap;
   overflow: hidden;
   border-right: .15em solid white; /* The typewriter cursor */
-  width: 29vw;
-  animation: typing 4s steps(40, end), /* The typing effect */ blink-caret .75s step-end infinite; /* The typewriter cursor effect */
+  width: 0;
+  margin: 0 auto;
+  animation: typing 4s steps(40) 1s 1 normal both, /* The typing effect */ blink-caret .75s steps(1) infinite; /* The typewriter cursor effect */
 }
 
 .sidebar > h1 {
@@ -67,6 +73,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .screen.sidebar {
     width: 100vw; /* full width on small screens */
+    height: 10vh; /* 10% of the viewport height */
   }
 }
 
@@ -75,7 +82,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 30vw;
+    width: 100%;
   }
 }
 
