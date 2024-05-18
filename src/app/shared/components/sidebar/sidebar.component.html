@@ -2,7 +2,7 @@
   <div class="name-container">
     <h1>{{isSidebar ? 'RICM' : 'Roger Israel Cabrera Muñoz'}}</h1>
   </div>
-  <shared-sb-menu></shared-sb-menu>
+  <shared-sb-menu *ngIf="isSidebar"></shared-sb-menu>
   <div class="button-container">
     <button [ngClass]="{'btn-toggle': isSidebar,
             'btn-toggle-close': !isSidebar}"

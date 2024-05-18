@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'shared-sidebar',
@@ -11,8 +12,12 @@ export class SidebarComponent {
 
   isSidebar = false;
 
+  constructor(private route: Router) {
+  }
+
   toggleSidebar() {
     this.isSidebar = !this.isSidebar;
     this.onToggle.emit(this.isSidebar);
+    return this.route.navigateByUrl(this.isSidebar ? 'my-web' : '');
   }
 }
