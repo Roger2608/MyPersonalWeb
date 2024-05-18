@@ -7,6 +7,7 @@ import {StudentPageComponent} from './pages/student-page/student-page.component'
 import {BusinessPageComponent} from './pages/business-page/business-page.component';
 import {ContactPageComponent} from './pages/contact-page/contact-page.component';
 import {CoffeePageComponent} from "./pages/coffee-page/coffee-page.component";
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {CoffeePageComponent} from "./pages/coffee-page/coffee-page.component";
     StudentPageComponent,
     BusinessPageComponent,
     ContactPageComponent,
-    CoffeePageComponent
+    CoffeePageComponent,
+    ProjectPageComponent
   ],
   imports: [
     CommonModule,
