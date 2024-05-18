@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'shared-sidebar',
@@ -6,9 +6,13 @@ import {Component} from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+
+  @Output() onToggle: any = new EventEmitter<boolean>();
+
   isSidebar = false;
 
   toggleSidebar() {
     this.isSidebar = !this.isSidebar;
+    this.onToggle.emit(this.isSidebar);
   }
 }

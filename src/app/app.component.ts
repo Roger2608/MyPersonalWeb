@@ -7,4 +7,10 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
+  public active: boolean = false;
+
+  public toggle(isActive: boolean) {
+    this.active = isActive;
+  }
+
 }
