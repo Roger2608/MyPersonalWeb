@@ -21,13 +21,18 @@ export class SocialNetworksComponent {
     },
     {
       name: 'LinkedIn',
-      url: 'www.linkedin.com/in/roger-israel-cabrera-muñoz-6238b1202',
+      url: 'https://www.linkedin.com/in/roger-israel-cabrera-muñoz-6238b1202',
       icon: 'linkedIn.svg'
     },
     {
       name: 'GitHub',
       url: 'https://github.com/Roger2608',
       icon: 'github.svg'
+    },
+    {
+      name: 'Youtube',
+      url: 'https://www.youtube.com/@ricm2608',
+      icon: 'youtube.svg'
     }
   ]
 
