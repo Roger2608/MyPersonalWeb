@@ -4,13 +4,15 @@ import {SocialNetworksComponent} from './components/social-networks/social-netwo
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {SbMenuComponent} from './components/sb-menu/sb-menu.component';
 import {RouterModule} from "@angular/router";
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     SidebarComponent,
     SocialNetworksComponent,
-    SbMenuComponent
+    SbMenuComponent,
+    FooterComponent
   ],
   exports: [
     SidebarComponent

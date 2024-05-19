@@ -8,6 +8,9 @@ import {BusinessPageComponent} from './pages/business-page/business-page.compone
 import {ContactPageComponent} from './pages/contact-page/contact-page.component';
 import {CoffeePageComponent} from "./pages/coffee-page/coffee-page.component";
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BodyComponent } from './components/body/body.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
     BusinessPageComponent,
     ContactPageComponent,
     CoffeePageComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    HeaderComponent,
+    BodyComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

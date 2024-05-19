@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-business-page',
+  selector: 'my_web-business-page',
   templateUrl: './business-page.component.html',
   styleUrls: ['./business-page.component.css']
 })
