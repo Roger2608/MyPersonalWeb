@@ -1,0 +1,18 @@
+<h1 class="experience-title">Experiencia</h1>
+<div class="experience-container">
+
+  <div class="card-container" *ngFor="let experience of experiences">
+    <div class="card" (click)="openPopup(experience)">
+      <h2>{{ experience.title }}</h2>
+      <p>{{ experience.summary }}</p>
+    </div>
+  </div>
+
+  <div class="popup" *ngIf="selectedExperience">
+    <div class="popup-content">
+      <span class="close" (click)="closePopup()">&times;</span>
+      <h2>{{ selectedExperience.title }}</h2>
+      <p>{{ selectedExperience.description }}</p>
+    </div>
+  </div>
+</div>

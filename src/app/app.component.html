@@ -1,6 +1,13 @@
 <div [ngClass]="{'container_rezise':active}">
-  <shared-sidebar (onToggle)="toggle($event.valueOf())"></shared-sidebar>
-  <ng-container *ngIf="active">
-    <router-outlet></router-outlet>
-  </ng-container>
+
+  <div [ngClass]="{'row':active}">
+    <div [ngClass]="{'col-3':active}">
+      <shared-sidebar (onToggle)="toggle($event.valueOf())"></shared-sidebar>
+    </div>
+    <div [ngClass]="{'col-9': active, 'col-12': !active}">
+      <ng-container *ngIf="active">
+        <router-outlet></router-outlet>
+      </ng-container>
+    </div>
+  </div>
 </div>

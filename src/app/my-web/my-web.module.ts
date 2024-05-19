@@ -7,10 +7,14 @@ import {StudentPageComponent} from './pages/student-page/student-page.component'
 import {BusinessPageComponent} from './pages/business-page/business-page.component';
 import {ContactPageComponent} from './pages/contact-page/contact-page.component';
 import {CoffeePageComponent} from "./pages/coffee-page/coffee-page.component";
-import { ProjectPageComponent } from './pages/project-page/project-page.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BodyComponent } from './components/body/body.component';
-import { FooterComponent } from './components/footer/footer.component';
+import {ProjectPageComponent} from './pages/project-page/project-page.component';
+import {HeaderComponent} from './components/header/header.component';
+import {BodyComponent} from './components/body/body.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {AboutMeComponent} from './components/about-me/about-me.component';
+import {ExperienceComponent} from './components/experience/experience.component';
+import {TechnologiesComponent} from './components/technologies/technologies.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectPageComponent,
     HeaderComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    AboutMeComponent,
+    ExperienceComponent,
+    TechnologiesComponent,
+    AchievementsComponent
   ],
   imports: [
     CommonModule,

@@ -6,5 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  public title: string = 'Acerca de mi';
+  public description: string = 'Desarrollador Web';
 
 }
