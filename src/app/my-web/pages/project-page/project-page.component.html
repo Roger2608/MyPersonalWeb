@@ -1,1 +1,32 @@
-<p>project-page works!</p>
+<my_web-header [title]="title" [description]="description"></my_web-header>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col" *ngFor="let project of projects">
+    <div class="card" (click)="openModal(project)">
+      <img [src]="project.image" class="card-img-top" alt="{{ project.title }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <p class="card-text">{{ project.shortDescription }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="projectModal" *ngIf="selectedProject">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ selectedProject.title }}</h5>
+        <button type="button" class="btn-close" (click)="closeModal()"></button>
+      </div>
+      <div class="modal-body">
+        <p>{{ selectedProject.description }}</p>
+        <a [href]="selectedProject.repository" target="_blank">Repositorio</a>
+        <a [href]="selectedProject.url" target="_blank">URL del proyecto</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

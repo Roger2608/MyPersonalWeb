@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MyWebRoutingModule} from "./my-web-routing.module";
 import {SharedModule} from "../shared/shared.module";
 import {AboutPageComponent} from './pages/about-page/about-page.component';
@@ -14,7 +14,7 @@ import {FooterComponent} from './components/footer/footer.component';
 import {AboutMeComponent} from './components/about-me/about-me.component';
 import {ExperienceComponent} from './components/experience/experience.component';
 import {TechnologiesComponent} from './components/technologies/technologies.component';
-import { AchievementsComponent } from './components/achievements/achievements.component';
+import {AchievementsComponent} from './components/achievements/achievements.component';
 
 
 @NgModule({
@@ -36,7 +36,8 @@ import { AchievementsComponent } from './components/achievements/achievements.co
   imports: [
     CommonModule,
     MyWebRoutingModule,
-    SharedModule
+    SharedModule,
+    NgOptimizedImage
   ]
 })
 export class MyWebModule {

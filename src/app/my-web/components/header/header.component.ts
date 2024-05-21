@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'my_web-header',
@@ -6,7 +6,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  public title: string = 'Acerca de mi';
-  public description: string = 'Desarrollador Web';
+  @Input()
+  public title!: string;
+
+  @Input()
+  public description!: string;
 
 }
