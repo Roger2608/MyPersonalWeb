@@ -15,6 +15,7 @@ import {AboutMeComponent} from './components/about-me/about-me.component';
 import {ExperienceComponent} from './components/experience/experience.component';
 import {TechnologiesComponent} from './components/technologies/technologies.component';
 import {AchievementsComponent} from './components/achievements/achievements.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {AchievementsComponent} from './components/achievements/achievements.comp
     CommonModule,
     MyWebRoutingModule,
     SharedModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    ReactiveFormsModule
   ]
 })
 export class MyWebModule {

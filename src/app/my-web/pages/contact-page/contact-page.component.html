@@ -1,1 +1,18 @@
-<p>contact-page works!</p>
+<div class="contact-container">
+  <h1 class="contact-title">Contáctame</h1>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" formControlName="name" required>
+    </div>
+    <div class="form-group">
+      <label for="company">Empresa (opcional)</label>
+      <input type="text" id="company" formControlName="company">
+    </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" formControlName="email" required>
+    </div>
+    <button type="submit" [disabled]="!contactForm.valid">Enviar</button>
+  </form>
+</div>
