@@ -1,1 +1,22 @@
-<p>business-page works!</p>
+<div class="invitation-container">
+  <h1 class="invitation-title">Trabajemos juntos en tus proyectos</h1>
+  <p class="invitation-description">Soy un desarrollador con experiencia en una variedad de tecnologías y estoy listo
+    para ayudarte a llevar tus proyectos al siguiente nivel. Si estás interesado en trabajar conmigo, no dudes en
+    ponerse en contacto.</p>
+
+  <div class="project-types-container">
+    <h2 class="project-types-title">Tipos de proyectos que puedo abarcar:</h2>
+    <div class="project-type" *ngFor="let type of projectTypes">
+      <h3 class="project-type-title">{{ type.title }}</h3>
+      <p class="project-type-description">{{ type.description }}</p>
+    </div>
+  </div>
+  <div class="invitation-buttons-container">
+    <a routerLink="my-web/contact">
+      <button class="invitation-button">Contacta conmigo</button>
+    </a>
+    <a routerLink="my-web/projects">
+      <button class="invitation-button">Ver proyectos</button>
+    </a>
+  </div>
+</div>

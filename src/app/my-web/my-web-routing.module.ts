@@ -33,6 +33,16 @@ const routes: Routes = [
     component: ProjectPageComponent
   },
   {
+    path: 'business/my-web/contact',
+    redirectTo: 'contact',
+    pathMatch: 'full'
+  },
+  {
+    path: 'business/my-web/projects',
+    redirectTo: 'projects',
+    pathMatch: 'full'
+  },
+  {
     path: '**',
     redirectTo: 'about-me',
     pathMatch: 'full'
