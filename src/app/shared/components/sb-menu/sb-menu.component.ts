@@ -15,7 +15,7 @@ export class SbMenuComponent {
     {title: '¿Eres estudiante?', route: Paths.PATH_STUDENT},
     {title: '¿Eres Empresa?', route: Paths.PATH_BUSINESS},
     {title: 'Contactame', route: Paths.PATH_CONTACT},
-    {title: 'Invitame un Cafe :)', route: Paths.PATH_COFFEE},
+    // {title: 'Invitame un Cafe :)', route: Paths.PATH_COFFEE},
   ];
 
 }
