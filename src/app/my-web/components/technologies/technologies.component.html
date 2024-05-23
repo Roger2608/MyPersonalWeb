@@ -3,7 +3,7 @@
   <ul class="tech-list">
     <li class="tech-item" *ngFor="let technology of technologies">
       <img [src]="technology.image" alt="{{ technology.name }}" class="tech-image">
-      {{ technology.name }}
+      <span class="tech-name">{{ technology.name | titlecase }}</span>
     </li>
   </ul>
 </div>
