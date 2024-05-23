@@ -30,6 +30,12 @@
   cursor: pointer;
   width: 300px; /* Establece un ancho fijo para el card */
   height: 400px; /* Establece una altura fija para el card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .popup {
