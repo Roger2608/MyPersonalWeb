@@ -3,9 +3,9 @@
   width: 80%;
   margin: auto;
   padding: 20px;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .experience-title {
@@ -15,7 +15,11 @@
   margin-bottom: 30px;
 }
 
-.card-container {
+.experience-image {
+  object-fit: contain; /* Cambia 'cover' a 'contain' */
+  border-radius: 10px;
+  width: 100%;
+  height: 200px; /* Establece una altura fija para la imagen */
 }
 
 .card {
@@ -24,6 +28,8 @@
   padding: 20px;
   margin: 10px;
   cursor: pointer;
+  width: 300px; /* Establece un ancho fijo para el card */
+  height: 400px; /* Establece una altura fija para el card */
 }
 
 .popup {
@@ -47,7 +53,8 @@
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 50%;
+  width: 50%; /* Establece un ancho fijo para el popup */
+  height: 60%; /* Establece una altura fija para el popup */
   text-align: center;
 }
 

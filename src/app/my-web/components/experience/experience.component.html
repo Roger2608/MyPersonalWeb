@@ -3,15 +3,19 @@
 
   <div class="card-container" *ngFor="let experience of experiences">
     <div class="card" (click)="openPopup(experience)">
-      <h2>{{ experience.title }}</h2>
-      <p>{{ experience.summary }}</p>
+      <img [src]="experience.pathImage" alt="{{ experience.nameBusiness }}" class="experience-image">
+      <!-- Agrega esta línea -->
+      <h2>{{ experience.nameBusiness }}</h2>
+      <p>{{ experience.occupation }}</p>
     </div>
   </div>
 
-  <div class="popup" *ngIf="selectedExperience">
+  <div class="popup" *ngIf="selectedExperience" (click)="closePopup()">
     <div class="popup-content">
-      <span class="close" (click)="closePopup()">&times;</span>
-      <h2>{{ selectedExperience.title }}</h2>
+      <span class="close">&times;</span>
+      <img [src]="selectedExperience.pathImage" alt="{{ selectedExperience.nameBusiness }}" class="experience-image">
+      <!-- Agrega esta línea -->
+      <a href="{{ selectedExperience.url }}" target="_blank"><h2>{{ selectedExperience.nameBusiness }}</h2></a>
       <p>{{ selectedExperience.description }}</p>
     </div>
   </div>

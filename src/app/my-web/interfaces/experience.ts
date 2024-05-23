@@ -1,5 +1,7 @@
 export interface Experience {
-  title: string;
-  summary: string;
+  nameBusiness: string;
+  occupation: string;
   description: string;
+  url: string;
+  pathImage: string;
 }
