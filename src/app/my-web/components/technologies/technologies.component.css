@@ -30,7 +30,7 @@
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  flex: 0 0 auto; /* Evita que los elementos hijos se estiren y se encogen */
+  flex: 0 0 auto;
   margin-right: 20px;
 }
 
@@ -52,6 +52,6 @@
 }
 
 .tech-list-container {
-  overflow-x: auto; /* Permite el desplazamiento horizontal */
-  white-space: nowrap; /* Evita que los elementos hijos pasen a la siguiente línea */
+  overflow-x: auto;
+  white-space: nowrap;
 }

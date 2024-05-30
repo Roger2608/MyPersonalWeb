@@ -1,19 +1,19 @@
 .screen {
   background-color: black;
   color: white;
-  width: 100vw; /* viewport width */
-  height: 100vh; /* viewport height */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
-  overflow: hidden; /* hide scrollbars */
+  overflow: hidden;
 }
 
 .screen.sidebar {
-  width: 25vw; /* viewport width */
-  height: 100vh; /* viewport height */
+  width: 25vw;
+  height: 100vh;
   position: fixed;
   justify-content: space-around;
   left: 0;
@@ -28,10 +28,11 @@
 h1 {
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid white; /* The typewriter cursor */
+  border-right: .15em solid white;
   width: 0;
   margin: 0 auto;
-  animation: typing 4s steps(40) 1s 1 normal both, /* The typing effect */ blink-caret .75s steps(1) infinite; /* The typewriter cursor effect */
+  animation: typing 4s steps(40) 1s 1 normal both,
+  blink-caret .75s steps(1) infinite;
 }
 
 .sidebar > h1 {
@@ -69,11 +70,10 @@ h1 {
   margin-top: 1rem;
 }
 
-/* Media queries for responsiveness */
 @media screen and (max-width: 600px) {
   .screen.sidebar {
-    width: 100vw; /* full width on small screens */
-    height: 10vh; /* 10% of the viewport height */
+    width: 100vw;
+    height: 10vh;
   }
 }
 
@@ -86,7 +86,6 @@ h1 {
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to {
     border-color: transparent
