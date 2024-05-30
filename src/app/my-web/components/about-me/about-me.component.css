@@ -1,48 +1,43 @@
 .about-me-container {
-  width: 80%;
+  width: 95%;
   margin: auto;
   padding: 20px;
 }
 
-.about-me-title {
-  font-size: 2.5em;
-  color: #333;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .about-me-introduction,
 .about-me-interests,
-.about-me-skills,
 .about-me-closing {
   margin-bottom: 20px;
 }
 
 .about-me-introduction h2,
 .about-me-interests h2,
-.about-me-skills h2,
 .about-me-closing h2 {
-  font-size: 2em;
+  font-size: 1.3em;
   color: #666;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .about-me-introduction p,
-.about-me-interests ul,
-.about-me-skills ul,
+.about-me-interests p,
 .about-me-closing p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #333;
   line-height: 1.5;
 }
 
-.about-me-interests ul,
-.about-me-skills ul {
+.about-me-interests p {
   list-style-type: none;
   padding: 0;
 }
 
-.about-me-interests li,
-.about-me-skills li {
+.about-me-interests p {
   margin-bottom: 10px;
+}
+
+p {
+  color: #666; /* Cambia el color del texto a un gris oscuro */
+  line-height: 1.5; /* Aumenta el espacio entre las líneas de texto */
+  font-family: 'Arial', sans-serif;
 }
