@@ -22,7 +22,25 @@ export class TechnologiesComponent {
     {name: 'kubernetes', image: `${this.pathImage}kubernetes.svg`},
     {name: 'dynatrace', image: `${this.pathImage}dynatrace.svg`},
     {name: 'grafana', image: `${this.pathImage}grafana.svg`},
-    {name: 'jira', image: `${this.pathImage}jira.svg`},
-    // Agrega más tecnologías aquí
+    {name: 'jira', image: `${this.pathImage}jira.svg`}
   ];
+
+  currentTechnologyIndex = 0;
+
+  ngOnInit() {
+    this.startSlideShow();
+  }
+
+  startSlideShow() {
+    setInterval(() => {
+      this.currentTechnologyIndex += 5;
+      if (this.currentTechnologyIndex >= this.technologies.length) {
+        this.currentTechnologyIndex = 0;
+      }
+    }, 3000);
+  }
+
+  get currentTechnologies() {
+    return this.technologies.slice(this.currentTechnologyIndex, this.currentTechnologyIndex + 5);
+  }
 }

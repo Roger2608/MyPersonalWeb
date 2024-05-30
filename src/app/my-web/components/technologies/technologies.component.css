@@ -16,13 +16,12 @@
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
 .tech-item {
   width: 150px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +30,8 @@
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  flex: 0 0 auto; /* Evita que los elementos hijos se estiren y se encogen */
+  margin-right: 20px;
 }
 
 .tech-item:hover {
@@ -48,4 +49,9 @@
   font-size: 1em;
   font-weight: bold;
   color: #333;
+}
+
+.tech-list-container {
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Evita que los elementos hijos pasen a la siguiente línea */
 }

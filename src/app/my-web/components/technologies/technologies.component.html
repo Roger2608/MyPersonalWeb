@@ -1,9 +1,11 @@
 <div class="tech-container">
   <h2 class="tech-title">Tecnologías</h2>
-  <ul class="tech-list">
-    <li class="tech-item" *ngFor="let technology of technologies">
-      <img [src]="technology.image" alt="{{ technology.name }}" class="tech-image">
-      <span class="tech-name">{{ technology.name | titlecase }}</span>
-    </li>
-  </ul>
+  <div class="tech-list-container">
+    <ul class="tech-list">
+      <li class="tech-item" *ngFor="let technology of currentTechnologies">
+        <img [src]="technology.image" alt="{{ technology.name }}" class="tech-image">
+        <span class="tech-name">{{ technology.name | titlecase }}</span>
+      </li>
+    </ul>
+  </div>
 </div>
