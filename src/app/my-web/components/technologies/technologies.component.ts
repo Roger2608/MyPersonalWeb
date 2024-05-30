@@ -37,7 +37,7 @@ export class TechnologiesComponent {
       if (this.currentTechnologyIndex >= this.technologies.length) {
         this.currentTechnologyIndex = 0;
       }
-    }, 3000);
+    }, 2000);
   }
 
   get currentTechnologies() {
