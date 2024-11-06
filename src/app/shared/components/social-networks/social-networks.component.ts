@@ -10,18 +10,13 @@ export class SocialNetworksComponent {
 
   public networks: SocialNetwork[] = [
     {
-      name: 'X',
-      url: 'https://twitter.com/',
-      icon: 'x.svg'
-    },
-    {
       name: 'Instagram',
       url: 'https://www.instagram.com/ricm2608/',
       icon: 'instagram.svg'
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/roger-israel-cabrera-muñoz-6238b1202',
+      url: 'https://www.linkedin.com/in/ricm2608/',
       icon: 'linkedIn.svg'
     },
     {
