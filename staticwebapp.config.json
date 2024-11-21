@@ -1,16 +1,44 @@
 {
-  "routes": [
-    {
-      "route": "/assets/*",
-      "serve": "/assets/"
-    },
-    {
-      "route": "/styles/*",
-      "serve": "/styles/"
-    },
-    {
-      "route": "/*",
-      "rewrite": "/index.html"
-    }
-  ]
+    "routes": [
+        {
+            "route": "/assets/*",
+            "serve": "/assets/"
+        },
+        {
+            "route": "/styles/*",
+            "serve": "/styles/"
+        },
+        {
+            "route": "/scripts/*",
+            "serve": "/scripts/"
+        },
+        {
+            "route": "/images/*",
+            "serve": "/images/"
+        },
+        {
+            "route": "/manifest.json",
+            "serve": "/manifest.json"
+        },
+        {
+            "route": "/favicon.ico",
+            "serve": "/favicon.ico"
+        },
+        {
+            "route": "/sw.js",
+            "serve": "/sw.js"
+        },
+        {
+            "route": "/index.html",
+            "serve": "/index.html"
+        },
+        {
+            "route": "/",
+            "serve": "/index.html"
+        },
+        {
+            "route": "/*",
+            "rewrite": "/index.html"
+        }
+    ]
 }
