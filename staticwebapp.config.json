@@ -1,8 +1,16 @@
 {
   "routes": [
     {
-      "route": "**",
-      "rewrite": ""
+      "route": "/assets/*",
+      "serve": "/assets/"
+    },
+    {
+      "route": "/styles/*",
+      "serve": "/styles/"
+    },
+    {
+      "route": "/*",
+      "rewrite": "/index.html"
     }
   ]
 }
