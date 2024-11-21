@@ -1,52 +1,8 @@
 {
     "routes": [
         {
-            "route": "/assets/*",
-            "serve": "/assets/"
-        },
-        {
-            "route": "/styles/*",
-            "serve": "/styles/"
-        },
-        {
-            "route": "/scripts/*",
-            "serve": "/scripts/"
-        },
-        {
-            "route": "/images/*",
-            "serve": "/images/"
-        },
-        {
-            "route": "/manifest.json",
-            "serve": "/manifest.json"
-        },
-        {
-            "route": "/favicon.ico",
-            "serve": "/favicon.ico"
-        },
-        {
-            "route": "/sw.js",
-            "serve": "/sw.js"
-        },
-        {
-            "route": "/index.html",
-            "serve": "/index.html"
-        },
-        {
-            "route": "/",
-            "serve": "/index.html"
-        },
-        {
             "route": "/*",
             "rewrite": "/index.html"
         }
-    ],
-    "mimeTypes": {
-        ".json": "application/json",
-        ".js": "application/javascript",
-        ".css": "text/css",
-        ".ico": "image/x-icon",
-        ".png": "image/png",
-        ".jpg": "image/jpeg"
-    }
+    ]
 }
