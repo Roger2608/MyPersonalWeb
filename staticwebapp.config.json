@@ -3,13 +3,6 @@
     {
       "route": "/*",
       "rewrite": "/index.html"
-    },
-    {
-      "route": "/*",
-      "statusCode": 404,
-      "allowedRoles": [
-        "anónimo"
-      ]
     }
   ]
 }
